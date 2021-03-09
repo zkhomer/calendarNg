@@ -1,0 +1,18 @@
+.month-switcher {
+  width: 230px;
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+  left: calc(50% - 180px);
+  margin: 30px;
+}
+.month-switcher__month{
+  padding: 10px;
+}
+.month-switcher__btn {
+ border-radius: 4px;
+  background-color: #fff;
+  border: none;
+  outline: none;
+  cursor: pointer;
+}
