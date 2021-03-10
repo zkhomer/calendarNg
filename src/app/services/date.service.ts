@@ -1,7 +1,6 @@
 import {Injectable} from '@angular/core';
 import {Subject} from 'rxjs';
 import lastDayOfMonth from 'date-fns/lastDayOfMonth';
-import {hasI18nAttrs} from "@angular/compiler/src/render3/view/i18n/util";
 
 @Injectable()
 export class DateService {
@@ -22,4 +21,3 @@ export class DateService {
     }
   }
 }
-//test
