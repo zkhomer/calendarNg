@@ -1,16 +1,27 @@
-import { NgModule } from '@angular/core';
-import { BrowserModule } from '@angular/platform-browser';
+import {BrowserModule} from '@angular/platform-browser';
+import {NgModule} from '@angular/core';
 
-import { AppComponent } from './app.component';
+import {DateService} from './services/date.service';
+import {AppComponent} from './app.component';
+import {BaseLayoutComponent} from './components/base-layout/base-layout.component';
+import {MonthSwitcherComponent} from './components/month-switcher/month-switcher.component';
+import { TableComponent } from './components/table/table.component';
+
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    BaseLayoutComponent,
+    MonthSwitcherComponent,
+    TableComponent,
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
   ],
-  providers: [],
+  providers: [
+    DateService,
+  ],
   bootstrap: [AppComponent]
 })
-export class AppModule { }
+export class AppModule {
+}
