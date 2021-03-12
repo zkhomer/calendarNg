@@ -1,6 +1,5 @@
 import {Injectable} from '@angular/core';
 import { RowTeam } from '../interface/team';
-import { HttpQueryService } from './httpQuery.service';
 
 
 @Injectable()

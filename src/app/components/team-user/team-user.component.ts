@@ -7,7 +7,6 @@ import { StatisticService } from '../../services/statistic.service';
 import { CellInfo } from '../../interface/day';
 
 @Component({
-  // tslint:disable-next-line:component-selector
   selector: '[team-user]',
   templateUrl: './team-user.component.html',
   styleUrls: ['./team-user.component.scss']

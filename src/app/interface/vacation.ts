@@ -5,8 +5,4 @@ export interface Vacation {
   userId: number;
   isPaid: boolean;
 }
-export interface AvailableDates {
-  availableDatesList: Set<string>;
-  isPaid: boolean;
-}
 
