@@ -1,16 +1,18 @@
-
 <section class="calendar">
   <table class="calendar__table">
     <thead>
     <tr class="outputCalendar">
       <td class="addVacationCell outputItem ">
-        <button class="addVacationBtn"><span>+</span>Add Vacation</button>
+        <button class="addVacationBtn" (click)="showForm()"><span>+</span>Add Vacation</button>
       </td>
       <td *ngFor="let item of currentMonthObj" class="outputItem" [class.weekend]=item.isDayOff>
         <span class="outputDay">{{item.dayName}}</span>
         <span class="outputDate">{{item.date.getDate()}}</span>
       </td>
+      <td class="sumCell outputItem"><span class="calendar__text">Sum</span></td>
+    </tr>
     </thead>
-
-    </table>
+    <app-table-body *ngFor="let team of teamsList" [teamId]="team.id"></app-table-body>
+    <tr class="teamsFooter"></tr>
+  </table>
 </section>

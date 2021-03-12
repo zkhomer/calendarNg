@@ -1,0 +1,59 @@
+td {
+	border: 1px solid #D7D7D7;
+}
+
+.teamInfo span {
+	color: #949494;
+	font-size: 12px;
+	line-height: 18px;
+}
+
+tbody tr {
+	height: 33px;
+}
+
+.teamInfo {
+	padding: 5px 10px 6px;
+	font-weight: 600;
+	font-size: 12px;
+	line-height: 17px;
+	background: rgba(155, 153, 255, 0.1);
+}
+
+.teamInfo__wrapper {
+	display: flex;
+	justify-content: space-between;
+	align-items: baseline;
+}
+
+
+
+.teamInfo__block .chevronBtn {
+	font-size: 10px;
+	padding: 5px;
+}
+
+.teamInfo__block button {
+	background-color: transparent;
+}
+
+.teamInfo span {
+	color: #949494;
+	font-size: 12px;
+	line-height: 18px;
+}
+
+.percent {
+	padding: 0 4px;
+	font-size: 12px;
+	line-height: 1.2rem;
+	color: #070606;
+	border-radius: 2px;
+	display: inline-block;
+	min-width: 24px;
+	margin: 0 13px;
+}
+
+.hide {
+	display: none;
+}

@@ -4,20 +4,20 @@ import lastDayOfMonth from 'date-fns/lastDayOfMonth';
 
 @Injectable()
 export class DateService {
-  dateStream: Subject<Date> = new Subject();
-  date: Date = lastDayOfMonth(new Date());
+    dateStrem: Subject<Date> = new Subject();
+    date: Date = lastDayOfMonth(new Date());
 
-  constructor() {
-    this.dateStream.subscribe(date => this.date = date);
-  }
-
-  getDate = () => this.date;
-
-  switchMonth(direction: string): void {
-    if (direction === 'back') {
-      this.dateStream.next(new Date(this.date.getFullYear(), this.date.getMonth(), 0));
-    } else {
-      this.dateStream.next(new Date(this.date.getFullYear(), this.date.getMonth() + 2, 0));
+    constructor() {
+        this.dateStrem.subscribe(date => this.date = date);
     }
-  }
+
+    getDate = () => this.date;
+
+    switchMonth(direction: string): void {
+        if (direction === 'prev') {
+            this.dateStrem.next(new Date(this.date.getFullYear(), this.date.getMonth(), 0));
+        } else {
+            this.dateStrem.next(new Date(this.date.getFullYear(), this.date.getMonth() + 2, 0));
+        }
+    }
 }
