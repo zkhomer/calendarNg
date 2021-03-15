@@ -2,17 +2,14 @@
   width: 230px;
   display: flex;
   justify-content: space-between;
-  position: relative;
-  left: calc(50% - 180px);
-  margin: 30px;
+  margin: 30px auto;
 }
-.month-switcher__month{
+
+.month-switcher__month {
   padding: 10px;
 }
 .month-switcher__btn {
- border-radius: 4px;
-  background-color: #fff;
+  background-color: transparent;
+  padding: 10px;
   border: none;
-  outline: none;
-  cursor: pointer;
 }
