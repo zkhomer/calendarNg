@@ -1,1 +1,115 @@
-/* You can add global styles to this file, and also import other style files */
+@import "../node_modules/font-awesome/scss/font-awesome.scss";
+
+body,
+html {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Open Sans", sans-serif;
+  width: 100%;
+}
+
+#app {
+  width: 100vw;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+button {
+  cursor: pointer;
+  border: none;
+  outline: none;
+}
+
+app-table-body:nth-child(2) .employeeКRow,
+app-table-body:nth-child(2) .mainRow {
+  border-left: 3px solid rgb(155, 153, 255);
+}
+
+app-table-body:nth-child(3) .employeeКRow,
+app-table-body:nth-child(3) .mainRow {
+  border-left: 3px solid rgb(122, 175, 255);
+}
+
+app-table-body:nth-child(4) .employeeКRow,
+app-table-body:nth-child(4) .mainRow {
+  border-left: 3px solid rgb(255, 153, 153);
+}
+
+app-table-body:nth-child(5) .employeeКRow,
+app-table-body:nth-child(5) .mainRow {
+  border-left: 3px solid rgb(255, 167, 104);
+}
+
+app-table-body:nth-child(2) .percent {
+  background-color: rgb(155, 153, 255);
+}
+
+app-table-body:nth-child(3) .percent {
+  background-color: rgb(122, 175, 255);
+}
+
+app-table-body:nth-child(4) .percent {
+  background-color: rgb(255, 153, 153);
+}
+
+app-table-body:nth-child(5) .percent {
+  background-color: rgb(255, 167, 104);
+}
+
+.type-text {
+  position: relative;
+  color: #000;
+  font-size: 12px;
+  display: inline;
+  top: -23px;
+}
+
+td {
+  border: 1px solid #d7d7d7;
+}
+
+.nameCell {
+  padding: 13px 20px 7px;
+  font-size: 12px;
+  line-height: 18px;
+}
+
+.sumOfDaysOff {
+  text-align: center;
+  font-size: 14px;
+  line-height: 21px;
+  background: #f3f3f3;
+}
+
+.teamsFooter {
+  height: 33px;
+  background: #f3f3f3;
+}
+
+.footerHeader {
+  padding: 8px 0 8px 24px;
+  font-size: 12px;
+  font-weight: 600;
+}
+
+.footerCell {
+  text-align: center;
+  font-size: 14px;
+  font-weight: normal;
+}
+
+.weekend {
+  background: #f0f0f0;
+}
+
+app-table-body:after {
+  height: 33px;
+  display: table-row;
+  content: "";
+}

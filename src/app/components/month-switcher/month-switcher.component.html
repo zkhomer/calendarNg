@@ -1,0 +1,12 @@
+<div class="month-switcher">
+  <button class="month-switcher__btn" (click)="switchMonth('prev')">
+    <i class="fa fa-chevron-left"></i>
+  </button>
+  <span class="month-switcher__month"
+    >{{ currentMonth }} {{ currentYear }}</span
+  >
+
+  <button class="month-switcher__btn" (click)="switchMonth('next')">
+    <i class="fa fa-chevron-right"></i>
+  </button>
+</div>

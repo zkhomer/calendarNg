@@ -1,0 +1,8 @@
+<td class="nameCell">{{ user.name }}</td>
+<td
+  *ngFor="let dayCell of dayCells"
+  class="dayCell"
+  [class.weekend]="dayCell.isWeekend"
+  [ngClass]="this.getStyleClass(dayCell)"
+></td>
+<td class="sumOfDaysOff">{{ vacationSum }}</td>

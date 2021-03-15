@@ -1,0 +1,29 @@
+<tr class="mainRow">
+  <td class="teamInfo">
+    <div class="teamInfo__wrapper">
+      <p class="teamInfo__name">{{ team.name }}</p>
+      <div class="teamInfo__block">
+        <i class="fa fa-users"></i>
+        <span>{{ participants.length }}</span>
+        <div class="percent">
+          {{ team.percentageOfAbsent[date.getMonth()] }}%
+        </div>
+
+        <button (click)="switchShevronButton()">
+          <i *ngIf="!this.isTeamUsersHide" class="fa fa-chevron-up"></i>
+          <i *ngIf="this.isTeamUsersHide" class="fa fa-chevron-down"></i>
+        </button>
+      </div>
+    </div>
+  </td>
+  <td class="teamInfo" *ngFor="let i of [].constructor(date.getDate())"></td>
+  <td class="teamInfo"></td>
+</tr>
+<tr
+  team-user
+  class="employeeКRow"
+  [ngClass]="{ hide: isTeamUsersHide }"
+  *ngFor="let userId of participants"
+  [userId]="userId"
+  [teamId]="teamId"
+></tr>
